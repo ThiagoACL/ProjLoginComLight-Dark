@@ -27,7 +27,6 @@ form{
     height: 400px;
     animation: dark-to-light 0.3s ease-in-out;
     box-sizing: border-box;
-    min-width: 400px;
     max-width: 900px;
 }
 
