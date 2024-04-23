@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-purple-50: #7c3aed;
+    --color-purple-100: #a855f7;
+    --color-purple-200: #bf46ef;
+}
+
+body{
+    background: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', 'Courier New', Courier, monospace;
+}
+
+form{
+    background-color: white;
+    height: 400px;
+    animation: dark-to-light 0.3s ease-in-out;
+    box-sizing: border-box;
+    min-width: 400px;
+    max-width: 900px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+i#tema{
+    cursor: pointer;
+}
+
+ img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    color: var(--color-dark-900);
+    font-size: 1em;
+    background-color: transparent;
+       
+}
+
+i{
+    background-color: transparent;
+    color: var(--color-dark-900);
+}
+
+i#mostrarSenha{
+    cursor: pointer;
+}
+
+a{
+    font-size: 12px;
+    color: var(--color-purple-50);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    background: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
+}
+
+button:hover{
+    transform: scale(1.02);
+}
+
+
+.dark#login_form{
+    color: white;
+    background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login_form > header > i#tema{
+    color: white;
+}
+
+.dark#login_form > fieldset > div > input{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.dark#login_form > fieldset > div > i{
+    color: white;
+}
+
+.dark#login_form > fieldset > a{
+    color: var(--color-purple-200)
+}
+
+
+
+@keyframes dark-to-light{
+    0%{
+        background-color: var(--color-dark-100);
+    }
+
+    100%{
+        background-color: white;
+    }
+}
+
+@keyframes light-to-dark{
+    100%{
+        background-color: white;
+    }
+
+    0%{
+        background-color: var(--color-dark-100);
+    }
+}
