@@ -24,7 +24,7 @@ body{
 
 form{
     background-color: white;
-    height: 400px;
+    height: 450px;
     animation: dark-to-light 0.3s ease-in-out;
     box-sizing: border-box;
 }
@@ -33,11 +33,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 i#tema{
     cursor: pointer;
+    padding-right: 5px;
 }
 
  img{
